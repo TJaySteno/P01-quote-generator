@@ -9,50 +9,50 @@ const quotes = [
 		source: "Eddie Izzard",
 		citation: "Unrepeatable",
 		year: "1994",
-		tag: "humor"
+		tags: "humor"
 	},
 	{
 		quote: "I failed kindergarden because I couldn't spell my last name.",
 		source: "Zach Galifianakis",
 		citation: "Live at the Purple Onion",
 		year: "2007",
-		tag: "humor"
+		tags: "humor"
 	},
 	{
 		quote: "Years of love have been forgot, in the hatred of a minute",
 		source: "Edgar Allen Poe",
 		citation: "To M—",
 		year: "1829",
-		tag: "love"
+		tags: "love"
 	},
 	{
 		quote: "Forgive others, not because they deserve forgiveness, but because you deserve peace.",
 		source: "Jonathan Lockwood Huie",
-		tag: "peace"
+		tags: "peace"
 	},
 	{
 		quote: "History is a set of lies agreed upon.",
 		source: "Napolean",
-		tag: "history"
+		tags: "history"
 	},
 	{
 		quote: "The surest way to corrupt a youth is to instruct him to hold in higher esteem those who think alike than those who think differently",
 		source: "Friedrich Nietzsche",
 		citation: "The Dawn of Day",
 		year: "1881",
-		tag: "politics"
+		tags: "politics"
 	},
 	{
 		quote: "If they can get you asking the wrong questions, they don't have to worry about answers.",
 		source: "Thomas Pynchon",
 		citation: "Gravity's Rainbow",
 		year: "1973",
-		tag: "politics"
+		tags: "politics"
 	},
 	{
 		quote: "A man can love as many times as his heart is willing to be broken.",
 		source: "Unknown",
-		tag: "love"
+		tags: "love"
 	}
 ]
 
@@ -73,4 +73,27 @@ function printQuote () {
 	message += '</p>';
 
 	document.querySelector("#quote-box").innerHTML = message;
+
+	switch (newQuote.tags) {
+		case "humor":
+			document.querySelector("body").style.backgroundColor = '#8fb536';
+			break;
+		case "love":
+			document.querySelector("body").style.backgroundColor = '#b55c36';
+			break;
+		case "peace":
+			document.querySelector("body").style.backgroundColor = '#5c36b5';
+			break;
+		case "history":
+			document.querySelector("body").style.backgroundColor = '#b5368f';
+			break;
+		case "politics":
+			document.querySelector("body").style.backgroundColor = '#36b59c';
+			break;
+		default:
+			document.querySelector("body").style.backgroundColor = '#36b55c';
+			break;
+	}
 }
+
+window.setInterval(printQuote, 20000);
