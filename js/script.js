@@ -77,21 +77,27 @@ function printQuote () {
 	switch (newQuote.tags) {
 		case "humor":
 			document.querySelector("body").style.backgroundColor = '#8fb536';
+			document.querySelector("button").style.backgroundColor = '#8fb536';
 			break;
 		case "love":
 			document.querySelector("body").style.backgroundColor = '#b55c36';
+			document.querySelector("button").style.backgroundColor = '#b55c36';
 			break;
 		case "peace":
 			document.querySelector("body").style.backgroundColor = '#5c36b5';
+			document.querySelector("button").style.backgroundColor = '#5c36b5';
 			break;
 		case "history":
 			document.querySelector("body").style.backgroundColor = '#b5368f';
+			document.querySelector("button").style.backgroundColor = '#b5368f';
 			break;
 		case "politics":
 			document.querySelector("body").style.backgroundColor = '#36b59c';
+			document.querySelector("button").style.backgroundColor = '#36b59c';
 			break;
 		default:
 			document.querySelector("body").style.backgroundColor = '#36b55c';
+			document.querySelector("button").style.backgroundColor = '#36b55c';
 			break;
 	}
 }
