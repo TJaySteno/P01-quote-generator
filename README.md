@@ -7,6 +7,8 @@ For the first project, I will be starting with a simple quote generation app. I 
 
 *__Personal Development Emphasis:__ modular code, concise comments, helpful names for variables & functions*
 
+---
+
 __Grade:__ Exceeds Expectations
 
 __Grader's Overall Comments:__ "Great job! All throughout your code I found it easy to follow and read. Doesn't hurt if your project also ran smooth throughout, which it did. I strongly encourage you to go for exceeds on following projects. Awesome job on this one."
